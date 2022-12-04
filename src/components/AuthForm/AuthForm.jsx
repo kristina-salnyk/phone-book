@@ -52,6 +52,7 @@ export const AuthForm = ({ type }) => {
             setName(event.target.value);
           }}
           autocomplete="off"
+          focused={name !== ''}
         />
       )}
       <TextField
@@ -66,6 +67,7 @@ export const AuthForm = ({ type }) => {
           setEmail(event.target.value);
         }}
         autocomplete="off"
+        focused={email !== ''}
       />
       <TextField
         type="password"
@@ -79,6 +81,7 @@ export const AuthForm = ({ type }) => {
           setPassword(event.target.value);
         }}
         autocomplete="new-password"
+        focused={password !== ''}
       />
       <Button variant="outlined" type="submit" color="secondary">
         Submit
