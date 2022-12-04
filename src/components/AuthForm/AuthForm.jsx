@@ -30,7 +30,7 @@ export const AuthForm = ({ type }) => {
     <Box
       component="form"
       noValidate
-      autoComplete="off"
+      autoComplete="false"
       py={4}
       mx="auto"
       display="flex"
