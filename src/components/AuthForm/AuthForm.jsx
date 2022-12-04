@@ -37,7 +37,7 @@ export const AuthForm = ({ type }) => {
       gap={2}
       maxWidth="350px"
       onSubmit={handleFormSubmit}
-      autocomplete="chrome-off"
+      autocomplete="off"
     >
       {isRegister && (
         <TextField
@@ -51,7 +51,7 @@ export const AuthForm = ({ type }) => {
           onChange={event => {
             setName(event.target.value);
           }}
-          autocomplete="chrome-off"
+          autocomplete="off"
         />
       )}
       <TextField
@@ -65,7 +65,7 @@ export const AuthForm = ({ type }) => {
         onChange={event => {
           setEmail(event.target.value);
         }}
-        autocomplete="chrome-off"
+        autocomplete="off"
       />
       <TextField
         type="password"
@@ -78,7 +78,7 @@ export const AuthForm = ({ type }) => {
         onChange={event => {
           setPassword(event.target.value);
         }}
-        autocomplete="chrome-off"
+        autocomplete="new-password"
       />
       <Button variant="outlined" type="submit" color="secondary">
         Submit
