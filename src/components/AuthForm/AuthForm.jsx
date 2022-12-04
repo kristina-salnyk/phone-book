@@ -1,6 +1,5 @@
 import { Box, Button, TextField, useTheme } from '@mui/material';
 import { AUTH_TYPES } from '../../constants';
-import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { login, register } from '../../redux/auth/operations';
 
@@ -8,14 +7,14 @@ export const AuthForm = ({ type }) => {
   const theme = useTheme();
   const dispatch = useDispatch();
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
   const isRegister = type === AUTH_TYPES.REGISTER;
 
   const handleFormSubmit = event => {
     event.preventDefault();
+
+    const name = event.target?.name?.value;
+    const email = event.target.email.value;
+    const password = event.target.password.value;
 
     if (isRegister) {
       dispatch(register({ name, email, password }));
@@ -43,14 +42,11 @@ export const AuthForm = ({ type }) => {
         <TextField
           type="text"
           label="Name"
-          value={name}
+          name="name"
           variant="outlined"
           color="secondary"
           size="small"
           inputProps={{ style: { color: theme.palette.secondary.main } }}
-          onChange={event => {
-            setName(event.target.value);
-          }}
           autocomplete="off"
           focused
         />
@@ -58,28 +54,22 @@ export const AuthForm = ({ type }) => {
       <TextField
         type="email"
         label="E-mail"
-        value={email}
+        name="email"
         variant="outlined"
         color="secondary"
         size="small"
         inputProps={{ style: { color: theme.palette.secondary.main } }}
-        onChange={event => {
-          setEmail(event.target.value);
-        }}
         autocomplete="off"
         focused
       />
       <TextField
         type="password"
         label="Password"
-        value={password}
+        name="password"
         variant="outlined"
         color="secondary"
         size="small"
         inputProps={{ style: { color: theme.palette.secondary.main } }}
-        onChange={event => {
-          setPassword(event.target.value);
-        }}
         autocomplete="new-password"
         focused
       />
