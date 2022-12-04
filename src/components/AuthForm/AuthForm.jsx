@@ -47,6 +47,7 @@ export const AuthForm = ({ type }) => {
           variant="outlined"
           color="secondary"
           size="small"
+          autoComplete="off"
           inputProps={{ style: { color: theme.palette.secondary.main } }}
           onChange={event => {
             setName(event.target.value);
@@ -60,6 +61,7 @@ export const AuthForm = ({ type }) => {
         variant="outlined"
         color="secondary"
         size="small"
+        autoComplete="off"
         inputProps={{ style: { color: theme.palette.secondary.main } }}
         onChange={event => {
           setEmail(event.target.value);
@@ -72,6 +74,7 @@ export const AuthForm = ({ type }) => {
         variant="outlined"
         color="secondary"
         size="small"
+        autoComplete="off"
         inputProps={{ style: { color: theme.palette.secondary.main } }}
         onChange={event => {
           setPassword(event.target.value);
