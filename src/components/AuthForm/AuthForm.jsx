@@ -30,7 +30,6 @@ export const AuthForm = ({ type }) => {
     <Box
       component="form"
       noValidate
-      autoComplete="false"
       py={4}
       mx="auto"
       display="flex"
@@ -38,6 +37,7 @@ export const AuthForm = ({ type }) => {
       gap={2}
       maxWidth="350px"
       onSubmit={handleFormSubmit}
+      autocomplete="chrome-off"
     >
       {isRegister && (
         <TextField
@@ -47,11 +47,11 @@ export const AuthForm = ({ type }) => {
           variant="outlined"
           color="secondary"
           size="small"
-          autoComplete="false"
           inputProps={{ style: { color: theme.palette.secondary.main } }}
           onChange={event => {
             setName(event.target.value);
           }}
+          autocomplete="chrome-off"
         />
       )}
       <TextField
@@ -61,11 +61,11 @@ export const AuthForm = ({ type }) => {
         variant="outlined"
         color="secondary"
         size="small"
-        autoComplete="false"
         inputProps={{ style: { color: theme.palette.secondary.main } }}
         onChange={event => {
           setEmail(event.target.value);
         }}
+        autocomplete="chrome-off"
       />
       <TextField
         type="password"
@@ -74,11 +74,11 @@ export const AuthForm = ({ type }) => {
         variant="outlined"
         color="secondary"
         size="small"
-        autoComplete="false"
         inputProps={{ style: { color: theme.palette.secondary.main } }}
         onChange={event => {
           setPassword(event.target.value);
         }}
+        autocomplete="chrome-off"
       />
       <Button variant="outlined" type="submit" color="secondary">
         Submit
