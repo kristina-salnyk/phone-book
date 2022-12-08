@@ -1,4 +1,4 @@
-import { AppBar, Box, Container, Toolbar } from '@mui/material';
+import { AppBar, Box, Container, Toolbar, Typography } from '@mui/material';
 import { Outlet } from 'react-router-dom';
 import { Logo } from './Logo/Logo';
 import { NavLink } from './NavLink/NavLink';
@@ -6,9 +6,10 @@ import React from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { useDispatch } from 'react-redux';
 import { logout } from '../redux/auth/operations';
+import { AccountCircle } from '@mui/icons-material';
 
 export const SharedLayout = () => {
-  const { isLoggedIn } = useAuth();
+  const { isLoggedIn, user } = useAuth();
   const dispatch = useDispatch();
 
   return (
@@ -19,12 +20,26 @@ export const SharedLayout = () => {
             <Logo />
             <Box ml="auto" display="flex" gap="20px">
               {isLoggedIn ? (
-                <NavLink
-                  title="Logout"
-                  onClick={() => {
-                    dispatch(logout());
-                  }}
-                />
+                <>
+                  <NavLink path="contacts" title="Contacts" />
+                  <NavLink
+                    title="Logout"
+                    onClick={() => {
+                      dispatch(logout());
+                    }}
+                  />
+                  <Box display="flex" gap="10px" alignItems="center">
+                    <AccountCircle sx={{ fontSize: 35 }} />
+                    <Box display="flex" flexDirection="column">
+                      <Typography variant="" component="span">
+                        {user.name}
+                      </Typography>
+                      <Typography variant="subtitle2" component="span">
+                        {user.email}
+                      </Typography>
+                    </Box>
+                  </Box>
+                </>
               ) : (
                 <>
                   <NavLink path="login" title="Login" />
