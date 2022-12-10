@@ -36,7 +36,7 @@ export const AuthForm = ({ type }) => {
       gap={2}
       maxWidth="350px"
       onSubmit={handleFormSubmit}
-      autocomplete="off"
+      autoComplete="off"
     >
       {isRegister && (
         <TextField
@@ -47,7 +47,7 @@ export const AuthForm = ({ type }) => {
           color="secondary"
           size="small"
           inputProps={{ style: { color: theme.palette.secondary.main } }}
-          autocomplete="off"
+          autoComplete="off"
           focused
         />
       )}
@@ -59,7 +59,7 @@ export const AuthForm = ({ type }) => {
         color="secondary"
         size="small"
         inputProps={{ style: { color: theme.palette.secondary.main } }}
-        autocomplete="off"
+        autoComplete="off"
         focused
       />
       <TextField
@@ -70,7 +70,7 @@ export const AuthForm = ({ type }) => {
         color="secondary"
         size="small"
         inputProps={{ style: { color: theme.palette.secondary.main } }}
-        autocomplete="new-password"
+        autoComplete="new-password"
         focused
       />
       <Button variant="outlined" type="submit" color="secondary">

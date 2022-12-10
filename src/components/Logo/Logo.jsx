@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import { NavLink } from '../NavLink/NavLink';
 import logo from '../../img/logo.png';
+import Image from 'mui-image';
 
 export const Logo = () => {
   return (
@@ -15,7 +16,7 @@ export const Logo = () => {
       }}
     >
       <Box display="flex" alignItems="center">
-        <img src={logo} alt="Phone book logo" width={40} height={40} />
+        <Image src={logo} alt="Phone book logo" width={40} height={40} />
       </Box>
     </NavLink>
   );
