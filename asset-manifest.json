@@ -1,17 +1,27 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.af66de04.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.5e56fad6.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.21b338b5.js",
+    "static/js/415.8db28695.chunk.js": "/goit-react-hw-08-phonebook/static/js/415.8db28695.chunk.js",
+    "static/js/38.5005a14e.chunk.js": "/goit-react-hw-08-phonebook/static/js/38.5005a14e.chunk.js",
+    "static/js/451.1e2d1a4e.chunk.js": "/goit-react-hw-08-phonebook/static/js/451.1e2d1a4e.chunk.js",
+    "static/js/577.d3a0efd9.chunk.js": "/goit-react-hw-08-phonebook/static/js/577.d3a0efd9.chunk.js",
+    "static/js/175.974ee6b7.chunk.js": "/goit-react-hw-08-phonebook/static/js/175.974ee6b7.chunk.js",
     "static/media/phone-book.png": "/goit-react-hw-08-phonebook/static/media/phone-book.fe600afb10ac06982d2e.png",
     "static/media/no-results.png": "/goit-react-hw-08-phonebook/static/media/no-results.d438399ff68428d0774c.png",
     "static/media/error.png": "/goit-react-hw-08-phonebook/static/media/error.5496863544fb5a519bcf.png",
     "static/media/logo.png": "/goit-react-hw-08-phonebook/static/media/logo.5717a6d2d4568ce3a0e5.png",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.af66de04.css.map": "/goit-react-hw-08-phonebook/static/css/main.af66de04.css.map",
-    "main.5e56fad6.js.map": "/goit-react-hw-08-phonebook/static/js/main.5e56fad6.js.map"
+    "main.21b338b5.js.map": "/goit-react-hw-08-phonebook/static/js/main.21b338b5.js.map",
+    "415.8db28695.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/415.8db28695.chunk.js.map",
+    "38.5005a14e.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/38.5005a14e.chunk.js.map",
+    "451.1e2d1a4e.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/451.1e2d1a4e.chunk.js.map",
+    "577.d3a0efd9.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/577.d3a0efd9.chunk.js.map",
+    "175.974ee6b7.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/175.974ee6b7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af66de04.css",
-    "static/js/main.5e56fad6.js"
+    "static/js/main.21b338b5.js"
   ]
 }
