@@ -2,7 +2,7 @@ import { Box, Button, Typography } from '@mui/material';
 import img from '../img/phone-book.png';
 import { NavLink } from 'react-router-dom';
 
-export const Home = () => {
+const Home = () => {
   return (
     <Box
       bgcolor="primary.light"
@@ -43,3 +43,5 @@ export const Home = () => {
     </Box>
   );
 };
+
+export default Home;

@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import { AuthForm } from '../components/AuthForm/AuthForm';
 import { AUTH_TYPES } from '../constants';
 
-export const Registration = () => {
+const Registration = () => {
   return (
     <Box bgcolor="primary.light" borderRadius={5} p={4}>
       <Typography
@@ -18,3 +18,5 @@ export const Registration = () => {
     </Box>
   );
 };
+
+export default Registration;

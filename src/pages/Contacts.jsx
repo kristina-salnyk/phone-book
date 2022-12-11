@@ -14,7 +14,7 @@ import { Loader } from '../components/Loader/Loader';
 import { Message } from '../components/Message/Message';
 import { Filter } from '../components/Filter/Filter';
 
-export const Contacts = () => {
+const Contacts = () => {
   const dispatch = useDispatch();
 
   const contacts = useSelector(selectVisibleContacts);
@@ -65,3 +65,5 @@ export const Contacts = () => {
     </Box>
   );
 };
+
+export default Contacts;
