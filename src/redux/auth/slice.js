@@ -5,6 +5,11 @@ const handleFulfilled = (state, action) => {
   state.user = action.payload.user;
   state.token = action.payload.token;
   state.isLoggedIn = true;
+  state.error = null;
+};
+
+const handleRejected = (state, action) => {
+  state.error = action.payload;
 };
 
 const logoutSuccessReducer = state => {
@@ -34,15 +39,24 @@ const authSlice = createSlice({
     token: null,
     isLoggedIn: false,
     isRefreshing: false,
+    error: null,
+  },
+  reducers: {
+    resetError(state) {
+      state.error = null;
+    },
   },
   extraReducers: builder =>
     builder
       .addCase(register.fulfilled, handleFulfilled)
+      .addCase(register.rejected, handleRejected)
       .addCase(login.fulfilled, handleFulfilled)
+      .addCase(login.rejected, handleRejected)
       .addCase(logout.fulfilled, logoutSuccessReducer)
       .addCase(current.fulfilled, currentSuccessReducer)
       .addCase(current.pending, currentLoadingReducer)
       .addCase(current.rejected, currentFailedReducer),
 });
 
+export const { resetError } = authSlice.actions;
 export const authReducer = authSlice.reducer;

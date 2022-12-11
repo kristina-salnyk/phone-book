@@ -7,6 +7,8 @@ import { useAuth } from '../hooks/useAuth';
 import { useDispatch } from 'react-redux';
 import { logout } from '../redux/auth/operations';
 import { AccountCircle } from '@mui/icons-material';
+import { Loader } from './Loader/Loader';
+import { Suspense } from 'react';
 
 export const SharedLayout = () => {
   const { isLoggedIn, user } = useAuth();
@@ -58,7 +60,9 @@ export const SharedLayout = () => {
           pt={4}
         >
           <Container maxWidth="md">
-            <Outlet />
+            <Suspense fallback={<Loader />}>
+              <Outlet />
+            </Suspense>
           </Container>
         </Box>
       </Box>

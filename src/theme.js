@@ -16,6 +16,9 @@ export const theme = createTheme({
     text: {
       secondary: '#fff',
     },
+    error: {
+      main: '#520808',
+    },
   },
   typography: {
     navLink: {

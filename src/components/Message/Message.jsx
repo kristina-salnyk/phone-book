@@ -33,6 +33,7 @@ export const Message = ({ type }) => {
         src={message.image}
         alt={message.text}
         sx={{ maxWidth: '200px' }}
+        duration={0}
       />
     </Box>
   );

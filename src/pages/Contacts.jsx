@@ -12,6 +12,7 @@ import { getContacts } from '../redux/contacts/operations';
 import getMessageType from '../utils/getMessageType';
 import { Loader } from '../components/Loader/Loader';
 import { Message } from '../components/Message/Message';
+import { Filter } from '../components/Filter/Filter';
 
 export const Contacts = () => {
   const dispatch = useDispatch();
@@ -53,6 +54,8 @@ export const Contacts = () => {
       >
         Contacts
       </Typography>
+
+      <Filter />
 
       {contacts.length > 0 && <ContactList />}
 

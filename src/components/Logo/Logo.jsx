@@ -16,7 +16,13 @@ export const Logo = () => {
       }}
     >
       <Box display="flex" alignItems="center">
-        <Image src={logo} alt="Phone book logo" width={40} height={40} />
+        <Image
+          src={logo}
+          alt="Phone book logo"
+          width={40}
+          height={40}
+          duration={0}
+        />
       </Box>
     </NavLink>
   );
