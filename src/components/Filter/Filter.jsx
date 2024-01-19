@@ -1,5 +1,5 @@
 import { Box, TextField } from '@mui/material';
-import { useTheme } from '@mui/styles';
+import { useTheme } from '@mui/material/styles';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectFilter } from '../../redux/filter/selectors';
 import { changeFilter } from '../../redux/filter/slice';
