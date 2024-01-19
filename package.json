@@ -1,8 +1,8 @@
 {
-  "name": "react-phonebook-06",
+  "name": "phone-book",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kristina-salnyk.github.io/react-phonebook-06/",
+  "homepage": "https://kristina-salnyk.github.io/phone-book/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
